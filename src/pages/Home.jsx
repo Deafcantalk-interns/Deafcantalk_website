@@ -99,31 +99,31 @@ const Home = () => {
             <Navbar />
 
             {/* HERO SECTION */}
-            <div className="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center px-10 py-20 gap-10 text-center">
+            <div className="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center px-4 sm:px-6 md:px-10 py-24 md:py-20 gap-6 md:gap-10 text-center">
                 {/* Main Heading */}
-                <div className="flex justify-center items-baseline flex-wrap gap-2">
-                    <span className="text-5xl md:text-6xl font-bold text-black animate-fade-in-left">Accessibility For</span>
+                <div className="flex justify-center items-baseline flex-wrap gap-2 px-2">
+                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black animate-fade-in-left">Accessibility For</span>
                     <span
                         key={currentText}
-                        className="text-5xl md:text-6xl font-bold cursor-pointer text-switch-animation"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold cursor-pointer text-switch-animation"
                         onClick={handleBounce}
-                        style={{ minWidth: currentText === 'Hard Of Hearing' ? '500px' : '200px', display: 'inline-block', textAlign: 'center', color: '#1E88A8' }}
+                        style={{ minWidth: currentText === 'Hard Of Hearing' ? 'auto' : 'auto', display: 'inline-block', textAlign: 'center', color: '#1E88A8' }}
                     >
                         {currentText}
                     </span>
-                    <span className="text-5xl md:text-6xl font-bold text-black animate-fade-in-right delay-400">Learners</span>
+                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black animate-fade-in-right delay-400">Learners</span>
                 </div>
 
                 {/* Subtext */}
-                <p className="text-2xl text-black font-medium max-w-[700px] text-center animate-fade-in-up delay-600">
-                    At school. At work. Everywhere!
+                <p className="text-lg sm:text-xl md:text-2xl text-black font-medium max-w-[90%] md:max-w-[700px] text-center animate-fade-in-up delay-600 px-4">
+                    At School. At Work. Everywhere!
                 </p>
 
                 {/* Buttons */}
-                <div className="flex justify-center gap-4 mt-4 flex-wrap">
+                <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mt-4 w-full max-w-md sm:max-w-none px-4">
                     <button
                         onClick={() => alert('Getting Started...')}
-                        className="text-white px-6 py-3 rounded-lg font-semibold transition btn-animated hover-lift delay-700 animate-fade-in-up"
+                        className="text-white px-6 py-3 rounded-lg font-semibold transition btn-animated hover-lift delay-700 animate-fade-in-up text-sm sm:text-base w-full sm:w-auto"
                         style={{ backgroundColor: '#0D5364' }}
                         onMouseEnter={(e) => e.target.style.backgroundColor = '#093d4a'}
                         onMouseLeave={(e) => e.target.style.backgroundColor = '#0D5364'}
@@ -132,7 +132,7 @@ const Home = () => {
                     </button>
                     <button
                         onClick={() => alert('Finding your plan...')}
-                        className="px-6 py-3 rounded-lg font-semibold transition btn-animated hover-lift delay-800 animate-fade-in-up"
+                        className="px-6 py-3 rounded-lg font-semibold transition btn-animated hover-lift delay-800 animate-fade-in-up text-sm sm:text-base w-full sm:w-auto"
                         style={{ border: '2px solid #0D5364', color: '#0D5364', backgroundColor: 'transparent' }}
                         onMouseEnter={(e) => {
                             e.target.style.backgroundColor = '#0D5364';
@@ -149,14 +149,14 @@ const Home = () => {
 
                 {/* 3D MOBILE PHONE CARD */}
                 <div
-                    className="mt-16 animate-scale-in delay-800"
+                    className="mt-8 md:mt-16 animate-scale-in delay-800 px-4"
                     style={{
                         perspective: '1000px',
                         transformStyle: 'preserve-3d'
                     }}
                 >
                     <div
-                        className="relative w-[350px] h-[700px] mx-auto"
+                        className="relative w-[280px] sm:w-[320px] md:w-[350px] h-[560px] sm:h-[640px] md:h-[700px] mx-auto"
                         style={{
                             transformStyle: 'preserve-3d',
                             transform: 'rotateY(-5deg) rotateX(5deg)',
@@ -407,18 +407,18 @@ const Home = () => {
 
             {/* DETAILED FEATURES SECTION - Slack Style */}
             <div className="w-full bg-white py-20">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
                     {/* Feature 1 - Note Taking AI Assistant */}
-                    <div className="flex flex-col lg:flex-row items-center gap-12 mb-32 scroll-reveal">
-                        <div className="flex-1 space-y-6">
-                            <h2 className="text-5xl font-bold text-black leading-tight">
+                    <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12 mb-20 md:mb-32 scroll-reveal">
+                        <div className="flex-1 space-y-4 md:space-y-6">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black leading-tight">
                                 Never miss a moment with AI-powered note taking
                             </h2>
-                            <p className="text-xl text-gray-600 leading-relaxed">
+                            <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
                                 Our intelligent AI assistant automatically captures and transcribes lectures, meetings, and conversations in real-time. Get organized summaries, searchable notes, and smart highlights of key points.
                             </p>
-                            <ul className="space-y-4 text-lg text-gray-700">
+                            <ul className="space-y-3 md:space-y-4 text-base md:text-lg text-gray-700">
                                 <li className="flex items-start gap-3">
                                     <span className="text-2xl" style={{ color: '#0D5364' }}>✓</span>
                                     <span>Real-time transcription with 95% accuracy</span>
@@ -607,18 +607,18 @@ const Home = () => {
             </div>
 
             {/* PARTNER LOGOS */}
-            <div className="w-full bg-gray-50 py-16 px-10">
-                <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
-                    <h2 className="text-gray-600 text-lg font-semibold uppercase tracking-wider">
+            <div className="w-full bg-gray-50 py-12 md:py-16 px-4 sm:px-6 md:px-10">
+                <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 md:gap-8">
+                    <h2 className="text-gray-600 text-base sm:text-lg font-semibold uppercase tracking-wider text-center">
                         Our Partners
                     </h2>
-                    <div className="flex justify-center items-center gap-12 md:gap-16 flex-wrap">
+                    <div className="flex justify-center items-center gap-8 sm:gap-10 md:gap-12 lg:gap-16 flex-wrap">
                         {/* MasterCard Foundation Logo */}
                         <div>
                             <img
                                 src={mastercardLogo}
                                 alt="Mastercard Foundation"
-                                className="h-20 md:h-24 w-auto object-contain bg-white"
+                                className="h-16 sm:h-20 md:h-24 w-auto object-contain bg-white"
                                 style={{ mixBlendMode: 'multiply' }}
                             />
                         </div>
@@ -628,7 +628,7 @@ const Home = () => {
                             <img
                                 src={unicefLogo}
                                 alt="UNICEF"
-                                className="h-20 md:h-24 w-auto object-contain bg-white"
+                                className="h-16 sm:h-20 md:h-24 w-auto object-contain bg-white"
                                 style={{ mixBlendMode: 'multiply' }}
                             />
                         </div>
@@ -638,7 +638,7 @@ const Home = () => {
                             <img
                                 src={mestLogo}
                                 alt="MEST Africa"
-                                className="h-20 md:h-24 w-auto object-contain bg-white"
+                                className="h-16 sm:h-20 md:h-24 w-auto object-contain bg-white"
                                 style={{ mixBlendMode: 'multiply' }}
                             />
                         </div>
