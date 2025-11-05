@@ -350,7 +350,7 @@ const Home = () => {
                         </h3>
                     </div>
 
-                    {/* Deaf Care */}
+                    {/* DeafCare */}
                     <div className="flex flex-col items-center animate-fade-in-up delay-1300">
                         {/* Heart/Care Icon */}
                         <div className="mb-4">
@@ -371,7 +371,7 @@ const Home = () => {
                         </div>
                         {/* Text */}
                         <h3 className="text-sm md:text-base font-medium text-black text-center">
-                            Deaf Care
+                            DeafCare
                         </h3>
                     </div>
 
@@ -550,9 +550,9 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* Feature 4 & 5 Combined - Deaf Care & Book Interpreter */}
+                    {/* Feature 4 & 5 Combined - DeafCare & Book Interpreter */}
                     <div className="grid md:grid-cols-2 gap-12 scroll-reveal">
-                        {/* Deaf Care */}
+                        {/* DeafCare */}
                         <div className="bg-gradient-to-br from-rose-50 to-orange-50 rounded-3xl p-8 shadow-xl hover-lift">
                             <div className="mb-6">
                                 <svg
@@ -567,7 +567,7 @@ const Home = () => {
                                     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-3xl font-bold text-black mb-4">Deaf Care Support</h3>
+                            <h3 className="text-3xl font-bold text-black mb-4">DeafCare Support</h3>
                             <p className="text-lg text-gray-700 mb-6">
                                 Connect with a supportive community and access mental health resources, peer support groups, and professional counseling services tailored for the deaf community.
                             </p>
