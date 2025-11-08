@@ -11,19 +11,19 @@ const Home = () => {
     const textIndexRef = useRef(0);
 
     useEffect(() => {
-        const texts = ['Deaf', 'Hard Of Hearing', 'Sign Language', 'Inclusive', 'Accessible'];
+        const texts = ['Deaf', 'Hard Of Hearing'];
 
         // Text switching animation
         const textSwitchInterval = setInterval(() => {
             textIndexRef.current = (textIndexRef.current + 1) % texts.length;
             setCurrentText(texts[textIndexRef.current]);
-        }, 1000); // Switch every 3 seconds
+        }, 5000); // Switch every 3 seconds
 
         // Bounce animation on load
         const label = document.querySelector('.text-blue-500.cursor-pointer');
         if (label) {
             label.classList.add('animate-bounce-on-tap');
-            setTimeout(() => label.classList.remove('animate-bounce-on-tap'), 1500);
+            setTimeout(() => label.classList.remove('animate-bounce-on-tap'), 5000);
         }
 
         // Intersection Observer for scroll animations
@@ -83,7 +83,7 @@ const Home = () => {
         }
 
         .text-switch-animation {
-        animation: text-switch 1s ease-in-out;
+        animation: text-switch 5s ease-in-out;
         display: inline-block;
         }
       `}</style>
@@ -107,8 +107,8 @@ const Home = () => {
                         textAlign: "center",
                         color: "#1E88A8",
                         // Fixed width ensures layout doesn’t jump
-                        minWidth: "12ch",
-                        transition: "width 0.5s ease-in-out",
+                        minWidth: "5ch",
+                        transition: "width 5s ease-in-out",
                         }}
                     >
                         {currentText}
@@ -482,7 +482,7 @@ const Home = () => {
                             </ul>
                         </div>
                         <div className="flex-1">
-                            <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 shadow-2xl hover-lift">
+                            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 shadow-2xl hover-lift">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="bg-white rounded-xl p-4 shadow-md">
                                         <div className="w-full h-24 rounded-lg mb-3" style={{ backgroundColor: '#0D5364' }}></div>
@@ -558,7 +558,7 @@ const Home = () => {
                     {/* Feature 4 & 5 Combined - DeafCare & Book Interpreter */}
                     <div className="grid md:grid-cols-2 gap-12 scroll-reveal">
                         {/* DeafCare */}
-                        <div className="bg-gradient-to-br from-rose-50 to-orange-50 rounded-3xl p-8 shadow-xl hover-lift">
+                        <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-3xl p-8 shadow-xl hover-lift">
                             <div className="mb-6">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
