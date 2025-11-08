@@ -34,7 +34,7 @@ const Contact = () => {
             {/* Hero Section */}
             <div className="w-full bg-gradient-to-br from-gray-50 to-white pt-32 pb-20 px-4 sm:px-6 md:px-10">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-6">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#003366] mb-6">
                         Get in Touch
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -53,7 +53,7 @@ const Contact = () => {
                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-bold text-black mb-3">Sales</h3>
+                        <h3 className="text-2xl font-bold text-[#003366] mb-3">Sales</h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Learn how DeafCanTalk can help your institution or organization.
                         </p>
@@ -69,7 +69,7 @@ const Contact = () => {
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-bold text-black mb-3">Help & Support</h3>
+                        <h3 className="text-2xl font-bold text-[#003366] mb-3">Help & Support</h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Get assistance from our support team with any technical issues.
                         </p>
@@ -80,16 +80,16 @@ const Contact = () => {
 
                     {/* Media & Press */}
                     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
-                        <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-6 bg-purple-600">
+                        <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-6 bg-teal-600">
                             <svg width="28" height="28" fill="white" viewBox="0 0 24 24">
                                 <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM8 15c0-1.66 1.34-3 3-3 .35 0 .69.07 1 .18V6h3v7h-4v2z" />
                             </svg>
                         </div>
-                        <h3 className="text-2xl font-bold text-black mb-3">Media & Press</h3>
+                        <h3 className="text-2xl font-bold text-[#003366] mb-3">Media & Press</h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
                             Press inquiries and media kit requests.
                         </p>
-                        <a href="mailto:contact@deafcantalk.com" className="text-base font-semibold inline-flex items-center gap-2 text-purple-600">
+                        <a href="mailto:contact@deafcantalk.com" className="text-base font-semibold inline-flex items-center gap-2 text-teal-600">
                             Contact press →
                         </a>
                     </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     {/* Form */}
                     <div>
-                        <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4">Send us a message</h2>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] mb-4">Send us a message</h2>
                         <p className="text-lg text-gray-600 mb-8">
                             Fill out the form below and we'll get back to you within 24 hours.
                         </p>
@@ -170,7 +170,7 @@ const Contact = () => {
                     <div className="space-y-8">
                         {/* Contact Details */}
                         <div className="bg-gray-50 rounded-2xl p-8">
-                            <h3 className="text-2xl font-bold text-black mb-6">Get in touch</h3>
+                            <h3 className="text-2xl font-bold text-[#003366] mb-6">Get in touch</h3>
 
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
@@ -199,7 +199,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-purple-600">
+                                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 bg-teal-600">
                                         <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
                                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                         </svg>
@@ -232,7 +232,7 @@ const Contact = () => {
             {/* FAQ Section */}
             <div className="w-full bg-gray-50 py-20 px-4 sm:px-6 md:px-10">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-black mb-4 text-center">Frequently Asked Questions</h2>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] mb-4 text-center">Frequently Asked Questions</h2>
                     <p className="text-lg text-gray-600 mb-12 text-center">
                         Quick answers to questions you may have
                     </p>

@@ -1,6 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import aslIntroImage from '../assets/asl.png';
+import everydayConvoImage from '../assets/talking.png';
+import advancedTechImage from '../assets/adv.png';
 
 const Education = () => {
     return (
@@ -29,7 +32,7 @@ const Education = () => {
                 </p>
                 <div className="w-full flex gap-6 flex-wrap justify-center">
                     <div className="card" style={{ flex: 1, minWidth: '280px', maxWidth: '350px' }}>
-                        <img src="/assets/yk7rAbMNoHMn.jpg" alt="ASL Introduction" className="rounded-lg w-full mb-4" />
+                        <img src={aslIntroImage} alt="ASL Introduction" className="rounded-lg w-full mb-4" />
                         <h3 className="text-xl font-semibold text-[#0066cc] mb-2">Introduction to ASL</h3>
                         <p className="text-gray-700 mb-3">
                             Learn the basics of American Sign Language, including the alphabet and common greetings.
@@ -40,7 +43,7 @@ const Education = () => {
                     </div>
 
                     <div className="card" style={{ flex: 1, minWidth: '280px', maxWidth: '350px' }}>
-                        <img src="/assets/6f4b6mSodwg3.jpg" alt="Everyday Conversations" className="rounded-lg w-full mb-4" />
+                        <img src={everydayConvoImage} alt="Everyday Conversations" className="rounded-lg w-full mb-4" />
                         <h3 className="text-xl font-semibold text-[#0066cc] mb-2">Everyday Conversations</h3>
                         <p className="text-gray-700 mb-3">
                             Master common phrases used in daily conversations, from introductions to asking questions.
@@ -51,7 +54,7 @@ const Education = () => {
                     </div>
 
                     <div className="card" style={{ flex: 1, minWidth: '280px', maxWidth: '350px' }}>
-                        <img src="/assets/WKSKB1WSQYkZ.jpg" alt="Advanced Techniques" className="rounded-lg w-full mb-4" />
+                        <img src={advancedTechImage} alt="Advanced Techniques" className="rounded-lg w-full mb-4" />
                         <h3 className="text-xl font-semibold text-[#0066cc] mb-2">Advanced Techniques</h3>
                         <p className="text-gray-700 mb-3">
                             Explore advanced signing techniques and learn how to express complex ideas and emotions.

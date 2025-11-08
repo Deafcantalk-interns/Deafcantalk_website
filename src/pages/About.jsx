@@ -1,6 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import celImage from '../assets/cvs.jpg';
+import ikeImage from '../assets/ike.jpg';
+import bejalImage from '../assets/bejal.jpg';
+import victorImage from '../assets/victor.jpg';
 
 const About = () => {
   return (
@@ -9,13 +13,13 @@ const About = () => {
       
       {/* Page header */}
       <div className="hero-section">
-        <h1 className="text-5xl text-blue-300 font-bold mb-4">About DeafCanTalk</h1>
-        <p className="text-xl text-blue-900">Our mission is to empower the deaf and hard-of-hearing community</p>
+        <h1 className="text-5xl text-white font-bold mb-4">About DeafCanTalk</h1>
+        <p className="text-xl text-white">Our mission is to empower the deaf and hard-of-hearing community</p>
       </div>
       
       {/* Mission section */}
       <div className="section">
-        <h2 className="text-4xl font-bold text-blue-300 mb-6">Our Mission</h2>
+        <h2 className="text-4xl font-bold text-[#003366] mb-6 text-center">Our Mission</h2>
         <p className="text-lg text-gray-700 leading-relaxed mb-4">
           DeafCanTalk was founded with a simple yet powerful vision: to create a world where communication barriers no longer exist for the deaf and hard-of-hearing community. We believe that everyone deserves to be heard, understood, and included in every conversation.
         </p>
@@ -29,7 +33,7 @@ const About = () => {
         <div className="w-full flex items-center gap-8 flex-wrap">
           <div className="flex-1 flex flex-col">
             <img 
-              src="/assets/cvv.jpeg" 
+              src={celImage}
               alt="Our Story" 
               className="rounded-lg shadow-lg w-full" 
               style={{ maxWidth: '500px' }}
@@ -86,7 +90,7 @@ const About = () => {
         <div className="w-full flex gap-6 flex-wrap justify-center">
           {/* Team member 1 */}
           <div className="card" style={{ flex: 1, minWidth: '250px', maxWidth: '300px', textAlign: 'center' }}>
-            <img src="/assets/ike.jpg" alt="Ike Agyei Menah" />
+            <img src={ikeImage} alt="Ike Agyei Menah" />
             <h3 className="text-xl font-bold text-[#003366] mb-2">Ike Agyei Menah</h3>
             <p className="text-md text-[#0066cc] mb-3">Founder & CEO</p>
             <p className="text-sm text-gray-700">
@@ -96,7 +100,7 @@ const About = () => {
           
           {/* Team member 2 */}
           <div className="card" style={{ flex: 1, minWidth: '250px', maxWidth: '300px', textAlign: 'center' }}>
-            <img src="/assets/bejal.jpg" alt="Bejal Joshi" />
+            <img src={bejalImage} alt="Bejal Joshi" />
             <h3 className="text-xl font-bold text-[#003366] mb-2">Bejal Joshi</h3>
             <p className="text-md text-[#0066cc] mb-3">COO & Cofounder</p>
             <p className="text-sm text-gray-700">
@@ -106,7 +110,7 @@ const About = () => {
           
           {/* Team member 3 */}
           <div className="card" style={{ flex: 1, minWidth: '250px', maxWidth: '300px', textAlign: 'center' }}>
-            <img src="/assets/victor.jpg" alt="Victor Wealth-Adankai" />
+            <img src={victorImage} alt="Victor Wealth-Adankai" />
             <h3 className="text-xl font-bold text-[#003366] mb-2">Victor Wealth-Adankai</h3>
             <p className="text-md text-[#0066cc] mb-3">CTO & Cofounder</p>
             <p className="text-sm text-gray-700">

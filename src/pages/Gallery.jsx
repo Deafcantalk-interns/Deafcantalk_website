@@ -2,6 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import signLanguageWorkshop from '../assets/cvv.jpeg';
+import youthEducationProgram from '../assets/can.jpeg';
+import deafAwarenessWeek from '../assets/deat.jpg';
+import aslTrainingSession from '../assets/cnd.jpeg';
+import communityGathering from '../assets/defff.webp';
+import technologyDemonstration from '../assets/tech.png';
 
 const Gallery = () => {
     const navigate = useNavigate();
@@ -32,7 +38,7 @@ const Gallery = () => {
                 <div className="w-full flex gap-4 flex-wrap justify-center">
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
-                            src="/assets/W5AZxosMC3ns.jpg"
+                            src={signLanguageWorkshop}
                             alt="Sign Language Workshop"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -45,7 +51,7 @@ const Gallery = () => {
 
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
-                            src="/assets/ojWfYsq24CjA.jpg"
+                            src={youthEducationProgram}
                             alt="Youth Education Program"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -58,7 +64,7 @@ const Gallery = () => {
 
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
-                            src="/assets/yk7rAbMNoHMn.jpg"
+                            src={deafAwarenessWeek}
                             alt="Deaf Awareness Week"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -71,7 +77,7 @@ const Gallery = () => {
 
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
-                            src="/assets/6f4b6mSodwg3.jpg"
+                            src={aslTrainingSession}
                             alt="ASL Training Session"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -84,7 +90,7 @@ const Gallery = () => {
 
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
-                            src="/assets/WKSKB1WSQYkZ.jpg"
+                            src={communityGathering}
                             alt="Community Gathering"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -97,7 +103,7 @@ const Gallery = () => {
 
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
-                            src="/assets/5PIzmnhkBlLt.jpg"
+                            src={technologyDemonstration}
                             alt="Technology Demonstration"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
@@ -128,7 +134,7 @@ const Gallery = () => {
                         <p className="text-gray-700 mb-3">
                             Learn about the features and benefits of the DeafCanTalk mobile app.
                         </p>
-                        <button onClick={() => alert('Playing video...')} className="btn-secondary">
+                        <button onClick={() => alert('Playing video...')} className="btn-primary">
                             Watch Video
                         </button>
                     </div>
@@ -144,7 +150,7 @@ const Gallery = () => {
                         <p className="text-gray-700 mb-3">
                             Hear from users about how DeafCanTalk has impacted their lives.
                         </p>
-                        <button onClick={() => alert('Playing video...')} className="btn-secondary">
+                        <button onClick={() => alert('Playing video...')} className="btn-primary">
                             Watch Video
                         </button>
                     </div>

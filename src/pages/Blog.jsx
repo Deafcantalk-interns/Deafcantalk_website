@@ -2,6 +2,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import aiImage from '../assets/ai.png';
+import childImage from '../assets/childhood.png';
+import advocacyImage from '../assets/advocacy.png';
+import workplaceImage from '../assets/workplace.png';
+import communityImage from '../assets/com-1.png';
 
 const Blog = () => {
     const navigate = useNavigate();
@@ -13,7 +18,7 @@ const Blog = () => {
             {/* Page header */}
             <div className="hero-section">
                 <h1 className="text-5xl font-bold mb-4">Our Blog</h1>
-                <p className="text-xl text-blue-700">Stories, insights, and updates from the deaf community</p>
+                <p className="text-xl text-white">Stories, insights, and updates from the deaf community</p>
             </div>
 
             {/* Introduction */}
@@ -43,10 +48,10 @@ const Blog = () => {
                     <div className="card">
                         <div className="w-full flex items-start gap-6 flex-wrap">
                             <img
-                                src="/assets/tech.png"
+                                src={aiImage}
                                 alt="Technology"
                                 className="rounded-lg shadow-md"
-                                style={{ width: '300px', height: '200px', objectFit: 'cover' }}
+                                style={{ width: '300px', height: '250px', objectFit: 'cover' }}
                             />
                             <div className="flex-1 flex flex-col gap-3">
                                 <h3 className="text-2xl font-bold text-[#003366]">
@@ -56,9 +61,11 @@ const Blog = () => {
                                 <p className="text-gray-700 leading-relaxed">
                                     Explore how artificial intelligence and machine learning are revolutionizing the way deaf individuals communicate. From real-time sign language translation to innovative assistive devices, technology is opening new doors for accessibility and inclusion.
                                 </p>
-                                <button onClick={() => alert('Opening article...')} className="btn-primary">
+                                <div className="w-full flex justify-end px-6">
+                                <button onClick={() => alert('Opening article...')} className="btn-primary w-1/2 md:w-1/4 lg:w-1/5">
                                     Read More
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,10 +74,10 @@ const Blog = () => {
                     <div className="card">
                         <div className="w-full flex items-start gap-6 flex-wrap">
                             <img
-                                src="/assets/child.jpg"
+                                src={childImage}
                                 alt="Child Education"
                                 className="rounded-lg shadow-md"
-                                style={{ width: '300px', height: '200px', objectFit: 'cover' }}
+                                style={{ width: '300px', height: '250px', objectFit: 'cover' }}
                             />
                             <div className="flex-1 flex flex-col gap-3">
                                 <h3 className="text-2xl font-bold text-[#003366]">
@@ -80,9 +87,11 @@ const Blog = () => {
                                 <p className="text-gray-700 leading-relaxed">
                                     Research shows that introducing sign language to young children, both deaf and hearing, can enhance cognitive development, improve communication skills, and foster empathy. Learn why early exposure to sign language matters.
                                 </p>
-                                <button onClick={() => alert('Opening article...')} className="btn-primary">
+                                <div className="w-full flex justify-end px-6">
+                                <button onClick={() => alert('Opening article...')} className="btn-primary w-1/2 md:w-1/4 lg:w-1/5">
                                     Read More
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -91,10 +100,10 @@ const Blog = () => {
                     <div className="card">
                         <div className="w-full flex items-start gap-6 flex-wrap">
                             <img
-                                src="/assets/right.jpg"
+                                src={advocacyImage}
                                 alt="Advocacy"
                                 className="rounded-lg shadow-md"
-                                style={{ width: '300px', height: '200px', objectFit: 'cover' }}
+                                style={{ width: '300px', height: '250px', objectFit: 'cover' }}
                             />
                             <div className="flex-1 flex flex-col gap-3">
                                 <h3 className="text-2xl font-bold text-[#003366]">
@@ -104,9 +113,11 @@ const Blog = () => {
                                 <p className="text-gray-700 leading-relaxed">
                                     Meet Sarah, a deaf advocate who has dedicated her life to fighting for equal access to education, employment, and healthcare. Her inspiring story reminds us of the importance of advocacy and the power of community support.
                                 </p>
-                                <button onClick={() => alert('Opening article...')} className="btn-primary">
+                                <div className="w-full flex justify-end px-6">
+                                <button onClick={() => alert('Opening article...')} className="btn-primary w-1/2 md:w-1/4 lg:w-1/5">
                                     Read More
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,7 +126,7 @@ const Blog = () => {
                     <div className="card">
                         <div className="w-full flex items-start gap-6 flex-wrap">
                             <img
-                                src="/assets/incl.jpg"
+                                src={workplaceImage}
                                 alt="Inclusive Workplace"
                                 className="rounded-lg shadow-md"
                                 style={{ width: '300px', height: '200px', objectFit: 'cover' }}
@@ -128,9 +139,11 @@ const Blog = () => {
                                 <p className="text-gray-700 leading-relaxed">
                                     Creating an inclusive workplace for deaf employees requires more than just compliance with accessibility laws. Discover practical strategies that employers can implement to foster a supportive and productive environment for all.
                                 </p>
-                                <button onClick={() => alert('Opening article...')} className="btn-primary">
+                                <div className="w-full flex justify-end px-6">
+                                <button onClick={() => alert('Opening article...')} className="btn-primary w-1/2 md:w-1/4 lg:w-1/5">
                                     Read More
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -139,7 +152,7 @@ const Blog = () => {
                     <div className="card">
                         <div className="w-full flex items-start gap-6 flex-wrap">
                             <img
-                                src="/assets/cel.jpeg"
+                                src={communityImage}
                                 alt="Celebration"
                                 className="rounded-lg shadow-md"
                                 style={{ width: '300px', height: '200px', objectFit: 'cover' }}
@@ -152,9 +165,11 @@ const Blog = () => {
                                 <p className="text-gray-700 leading-relaxed">
                                     Deaf culture is rich with history, art, and traditions that deserve recognition and celebration. Join us as we highlight the vibrant contributions of the deaf community to society and explore what makes deaf culture unique.
                                 </p>
-                                <button onClick={() => alert('Opening article...')} className="btn-primary">
+                                <div className="w-full flex justify-end px-6">
+                                    <button onClick={() => alert('Opening article...')} className="btn-primary w-1/2 md:w-1/4 lg:w-1/5">
                                     Read More
                                 </button>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -11,13 +11,13 @@ const Home = () => {
     const textIndexRef = useRef(0);
 
     useEffect(() => {
-        const texts = ['Deaf', 'Hard Of Hearing'];
+        const texts = ['Deaf', 'Hard Of Hearing', 'Sign Language', 'Inclusive', 'Accessible'];
 
         // Text switching animation
         const textSwitchInterval = setInterval(() => {
             textIndexRef.current = (textIndexRef.current + 1) % texts.length;
             setCurrentText(texts[textIndexRef.current]);
-        }, 3000); // Switch every 3 seconds
+        }, 1000); // Switch every 3 seconds
 
         // Bounce animation on load
         const label = document.querySelector('.text-blue-500.cursor-pointer');
@@ -63,36 +63,28 @@ const Home = () => {
     return (
         <div>
             <style>{`
-        @keyframes bounce-on-tap {
-          0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-          40% { transform: translateY(-25px); }
-          60% { transform: translateY(-10px); }
-        }
-        .animate-bounce-on-tap {
-          animation: bounce-on-tap 1.2s ease;
-        }
-        
         @keyframes text-switch {
-          0% { 
+        0% {
             opacity: 0;
-            transform: translateY(20px) scale(0.95);
-          }
-          15% {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-          85% {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-          100% {
-            opacity: 0;
-            transform: translateY(-20px) scale(0.95);
-          }
+            transform: translateY(20px);
         }
-        
+        15% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        85% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        }
+
         .text-switch-animation {
-          animation: text-switch 3s ease-in-out;
+        animation: text-switch 1s ease-in-out;
+        display: inline-block;
         }
       `}</style>
 
@@ -101,18 +93,31 @@ const Home = () => {
             {/* HERO SECTION */}
             <div className="w-full min-h-screen bg-gray-50 flex flex-col justify-center items-center px-4 sm:px-6 md:px-10 py-24 md:py-20 gap-6 md:gap-10 text-center">
                 {/* Main Heading */}
-                <div className="flex justify-center items-baseline flex-wrap gap-2 px-2">
-                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black animate-fade-in-left">Accessibility For</span>
+                <div className="flex justify-center items-baseline flex-wrap gap-2 px-2 mt-20">
+                    <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+                        Accessibility For
+                    </span>
+
                     <span
                         key={currentText}
-                        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold cursor-pointer text-switch-animation"
+                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold cursor-pointer text-switch-animation"
                         onClick={handleBounce}
-                        style={{ minWidth: currentText === 'Hard Of Hearing' ? 'auto' : 'auto', display: 'inline-block', textAlign: 'center', color: '#1E88A8' }}
+                        style={{
+                        display: "inline-block",
+                        textAlign: "center",
+                        color: "#1E88A8",
+                        // Fixed width ensures layout doesn’t jump
+                        minWidth: "12ch",
+                        transition: "width 0.5s ease-in-out",
+                        }}
                     >
                         {currentText}
                     </span>
-                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black animate-fade-in-right delay-400">Learners</span>
-                </div>
+
+                    <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+                        Learners
+                    </span>
+                    </div>
 
                 {/* Subtext */}
                 <p className="text-lg sm:text-xl md:text-2xl text-black font-medium max-w-[90%] md:max-w-[700px] text-center animate-fade-in-up delay-600 px-4">

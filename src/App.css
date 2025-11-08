@@ -14,7 +14,10 @@ code {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #66d7eb 0%, #4b92a2 100%);
+    /* background-image: url(./assets/cantalk.jpg);
+    background-size: cover;
+    background-position: center; */ 
     color: white;
     padding: 80px 40px;
     text-align: center;
@@ -51,7 +54,7 @@ code {
 
 /* Buttons */
 .btn-primary {
-    background-color: #667eea;
+    background-color: #277591;
     color: white;
     padding: 12px 24px;
     border: none;
@@ -63,15 +66,15 @@ code {
 }
 
 .btn-primary:hover {
-    background-color: #5568d3;
+    background-color: #9fdff6;
     transform: scale(1.05);
 }
 
 .btn-secondary {
-    background-color: #e0e7ff;
-    color: #667eea;
+    background-color: #e0f9ff;
+    color: #1a606e;
     padding: 10px 20px;
-    border: 2px solid #667eea;
+    border: 2px solid #66a3f3;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -80,7 +83,7 @@ code {
 }
 
 .btn-secondary:hover {
-    background-color: #667eea;
+    background-color: #26c5e9;
     color: white;
 }
 

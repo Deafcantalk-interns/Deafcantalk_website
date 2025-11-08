@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import deafcantalkLogo from '../assets/deafcantalk_logo.jpeg';
 
 const Footer = () => {
   return (
@@ -16,7 +17,10 @@ const Footer = () => {
 
           {/* About section */}
           <div className="flex flex-col gap-4 animate-fade-in">
-            <h3 className="text-3xl font-bold text-white animate-float">DeafCanTalk</h3>
+            <div className="flex flex-row items-center gap-3 ">
+            <img src={deafcantalkLogo} alt="DeafCanTalk" className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full shadow-md animate-float" />
+            <h3 className="text-3xl font-bold text-white ">DeafCanTalk</h3>
+            </div>
             <p className="text-gray-200 text-base leading-relaxed">
               Empowering the deaf and hard-of-hearing community through innovative technology and inclusive learning.
             </p>

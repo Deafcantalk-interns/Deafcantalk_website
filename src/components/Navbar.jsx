@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <header
-      className="text-white shadow-lg animate-slide-down mx-2 md:mx-4 mt-2 rounded-full fixed top-0 left-0 right-0 z-50"
+      className="text-white shadow-lg animate-slide-down mx-2 md:mx-4 mt-2 rounded-full fixed top-0 left-0 right-0 z-50 py-4 px-5 md:px-6 lg:px-8"
       style={{
         padding: '0.5rem 1rem md:0.5rem 1.5rem',
         background: 'rgba(255, 255, 255, 0.1)',
