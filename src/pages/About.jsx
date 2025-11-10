@@ -10,13 +10,13 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      
+
       {/* Page header */}
       <div className="hero-section">
         <h1 className="text-5xl text-white font-bold mb-4">About DeafCanTalk</h1>
         <p className="text-xl text-white">Our mission is to empower the deaf and hard-of-hearing community</p>
       </div>
-      
+
       {/* Mission section */}
       <div className="section">
         <h2 className="text-4xl font-bold text-[#003366] mb-6 text-center">Our Mission</h2>
@@ -27,15 +27,15 @@ const About = () => {
           Our mobile app leverages cutting-edge technology to provide real-time sign language translation, educational resources, and a supportive community platform. We are committed to breaking down barriers and fostering a more inclusive society where deaf individuals can thrive.
         </p>
       </div>
-      
+
       {/* History section */}
       <div className="section bg-gray-50">
         <div className="w-full flex items-center gap-8 flex-wrap">
           <div className="flex-1 flex flex-col">
-            <img 
+            <img
               src={celImage}
-              alt="Our Story" 
-              className="rounded-lg shadow-lg w-full" 
+              alt="Our Story"
+              className="rounded-lg shadow-lg w-full"
               style={{ maxWidth: '500px' }}
             />
           </div>
@@ -50,7 +50,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Vision section */}
       <div className="section">
         <h2 className="text-4xl font-bold text-[#003366] mb-6 text-center">Our Vision</h2>
@@ -62,7 +62,7 @@ const About = () => {
               We envision a world where sign language is universally recognized and accessible technology empowers every deaf individual to communicate effortlessly.
             </p>
           </div>
-          
+
           {/* Vision 2 */}
           <div className="card" style={{ flex: 1, minWidth: '280px', maxWidth: '350px' }}>
             <h3 className="text-2xl font-semibold text-[#0066cc] mb-3">Education for All</h3>
@@ -70,7 +70,7 @@ const About = () => {
               We aim to provide comprehensive educational resources that enable both deaf individuals and hearing people to learn and understand sign language.
             </p>
           </div>
-          
+
           {/* Vision 3 */}
           <div className="card" style={{ flex: 1, minWidth: '280px', maxWidth: '350px' }}>
             <h3 className="text-2xl font-semibold text-[#0066cc] mb-3">Innovation & Advocacy</h3>
@@ -80,7 +80,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Team section */}
       <div className="section bg-gray-50 w-full">
         <h2 className="text-4xl font-bold text-[#003366] mb-6 text-center">Meet Our Team</h2>
@@ -97,7 +97,7 @@ const About = () => {
               Passionate advocate for deaf rights with 15 years of experience in accessibility technology.
             </p>
           </div>
-          
+
           {/* Team member 2 */}
           <div className="card" style={{ flex: 1, minWidth: '250px', maxWidth: '300px', textAlign: 'center' }}>
             <img src={bejalImage} alt="Bejal Joshi" />
@@ -107,19 +107,19 @@ const About = () => {
               Expert in AI and machine learning, specializing in sign language recognition systems.
             </p>
           </div>
-          
+
           {/* Team member 3 */}
           <div className="card" style={{ flex: 1, minWidth: '250px', maxWidth: '300px', textAlign: 'center' }}>
             <img src={victorImage} alt="Victor Wealth-Adankai" />
             <h3 className="text-xl font-bold text-[#003366] mb-2">Victor Wealth-Adankai</h3>
             <p className="text-md text-[#0066cc] mb-3">CTO & Cofounder</p>
             <p className="text-sm text-gray-700">
-              Certified ASL interpreter and educator dedicated to creating accessible learning materials.
+              Certified GSL interpreter and educator dedicated to creating accessible learning materials.
             </p>
           </div>
         </div>
       </div>
-      
+
       {/* Community impact */}
       <div className="section">
         <h2 className="text-4xl font-bold text-[#003366] mb-6 text-center">Our Community Impact</h2>
@@ -128,19 +128,19 @@ const About = () => {
             <p className="text-5xl font-bold text-blue-500 mb-2">50,000+</p>
             <p className="text-lg text-gray-700">Active Users</p>
           </div>
-          
+
           <div className="card" style={{ flex: 1, minWidth: '200px', maxWidth: '250px', textAlign: 'center' }}>
             <p className="text-5xl font-bold text-blue-600 mb-2">100+</p>
             <p className="text-lg text-gray-700">Educational Resources</p>
           </div>
-          
+
           <div className="card" style={{ flex: 1, minWidth: '200px', maxWidth: '250px', textAlign: 'center' }}>
             <p className="text-5xl font-bold text-blue-800 mb-2">25</p>
             <p className="text-lg text-gray-700">Countries Reached</p>
           </div>
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );

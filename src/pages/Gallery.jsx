@@ -78,13 +78,13 @@ const Gallery = () => {
                     <div className="card" style={{ flex: '0 1 calc(33.333% - 1rem)', minWidth: '280px' }}>
                         <img
                             src={aslTrainingSession}
-                            alt="ASL Training Session"
+                            alt="GSL Training Session"
                             className="rounded-lg w-full mb-3"
                             style={{ height: '250px', objectFit: 'cover' }}
                         />
-                        <h3 className="text-lg font-semibold text-[#0066cc] mb-2">ASL Training Session</h3>
+                        <h3 className="text-lg font-semibold text-[#0066cc] mb-2">GSL Training Session</h3>
                         <p className="text-sm text-gray-700">
-                            Professional ASL training for educators and interpreters.
+                            Professional GSL training for educators and interpreters.
                         </p>
                     </div>
 
