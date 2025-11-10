@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import deafcantalkLogo from '../assets/deafcantalk_logo.jpeg';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="w-full mt-20 relative overflow-hidden" style={{
       background: 'linear-gradient(135deg, #0D5364 0%, #1E88A8 100%)',
@@ -18,8 +22,8 @@ const Footer = () => {
           {/* About section */}
           <div className="flex flex-col gap-4 animate-fade-in">
             <div className="flex flex-row items-center gap-3 ">
-            <img src={deafcantalkLogo} alt="DeafCanTalk" className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full shadow-md animate-float" />
-            <h3 className="text-3xl font-bold text-white ">DeafCanTalk</h3>
+              <img src={deafcantalkLogo} alt="DeafCanTalk" className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full shadow-md animate-float" />
+              <h3 className="text-3xl font-bold text-white ">DeafCanTalk</h3>
             </div>
             <p className="text-gray-200 text-base leading-relaxed">
               Empowering the deaf and hard-of-hearing community through innovative technology and inclusive learning.
@@ -71,22 +75,22 @@ const Footer = () => {
           {/* Quick links */}
           <div className="flex flex-col gap-4 animate-fade-in delay-100">
             <h4 className="text-xl font-bold text-white mb-2">Quick Links</h4>
-            <Link to="/" className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
+            <Link to="/" onClick={scrollToTop} className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
               → Home
             </Link>
-            <Link to="/about" className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
+            <Link to="/about" onClick={scrollToTop} className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
               → About Us
             </Link>
-            <Link to="/education" className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
+            <Link to="/education" onClick={scrollToTop} className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
               → Education
             </Link>
-            <Link to="/blog" className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
+            <Link to="/blog" onClick={scrollToTop} className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
               → Blog
             </Link>
-            <Link to="/gallery" className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
+            <Link to="/gallery" onClick={scrollToTop} className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
               → Gallery
             </Link>
-            <Link to="/contact" className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
+            <Link to="/contact" onClick={scrollToTop} className="text-gray-200 hover:text-white hover:translate-x-2 transition-all duration-300 no-underline text-base">
               → Contact
             </Link>
           </div>

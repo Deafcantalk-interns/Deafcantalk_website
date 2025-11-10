@@ -32,10 +32,10 @@ const Education = () => {
                 </p>
                 <div className="w-full flex gap-6 flex-wrap justify-center">
                     <div className="card" style={{ flex: 1, minWidth: '280px', maxWidth: '350px' }}>
-                        <img src={aslIntroImage} alt="ASL Introduction" className="rounded-lg w-full mb-4" />
-                        <h3 className="text-xl font-semibold text-[#0066cc] mb-2">Introduction to ASL</h3>
+                        <img src={aslIntroImage} alt="GSL Introduction" className="rounded-lg w-full mb-4" />
+                        <h3 className="text-xl font-semibold text-[#0066cc] mb-2">Introduction to GSL</h3>
                         <p className="text-gray-700 mb-3">
-                            Learn the basics of American Sign Language, including the alphabet and common greetings.
+                            Learn the basics of Ghanaian Sign Language, including the alphabet and common greetings.
                         </p>
                         <button onClick={() => alert('Opening tutorial...')} className="btn-secondary">
                             Watch Tutorial
@@ -74,9 +74,9 @@ const Education = () => {
                 </p>
                 <div className="w-full flex gap-6 flex-wrap">
                     <div className="card" style={{ flex: 1, minWidth: '250px' }}>
-                        <h3 className="text-xl font-semibold text-[#0066cc] mb-2">ASL Alphabet Guide</h3>
+                        <h3 className="text-xl font-semibold text-[#0066cc] mb-2">GSL Alphabet Guide</h3>
                         <p className="text-gray-700 mb-3">
-                            A comprehensive PDF guide to the American Sign Language alphabet with illustrations.
+                            A comprehensive PDF guide to the Ghanaian Sign Language alphabet with illustrations.
                         </p>
                         <button onClick={() => alert('Downloading...')} className="btn-primary">
                             Download PDF
